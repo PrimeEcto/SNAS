@@ -1,13 +1,23 @@
 # SNAS
 
-Fire TV streaming app.
+Private Fire TV streaming app with encrypted catalog delivery.
 
-## Install on Fire TV
+## Install
 
-1. Open **Downloader** app
-2. Enter: `github.com/PrimeEcto/SNAS/releases/latest/download/SNAS.apk`
-3. Install and open
+Open Downloader on Fire TV and enter:
+```
+github.com/PrimeEcto/SNAS/releases/latest/download/SNAS-debug.apk
+```
 
-## Latest Release
+## Unlock
 
-See [Releases](https://github.com/PrimeEcto/SNAS/releases)
+On first launch, enter the unlock code to decrypt the catalog.
+The code is never stored in the APK or this repository.
+
+## Build
+
+```bash
+./gradlew :app:assembleDebug
+```
+
+Requires JDK 17+ and Android SDK 35.
